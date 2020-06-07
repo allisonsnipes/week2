@@ -30,30 +30,47 @@ public class BmiProgram {
 		 * enter theirn weight. 2. Next I want to have the user enter their height in
 		 * inches. (make sure to include error handling) 3. I want to take the users
 		 * input and calculate the bmi. (make sure to include error handling) 4.I need
-		 * to have a switch case for when the user wants to quit the program.
+		 * to have a if/else if for each bmi range.
 		 */
-		if (userEntry1 > 0 || userEntry1 < 1000) {
+		if ((userEntry1 >= 0) || (userEntry1 < 1000)) {
 			inKilograms = userEntry1 * 0.45359237;
-			System.out.println("\nYou are " + inKilograms + " in kilograms.");
-		} else
+			System.out.println("You are " + inKilograms + " in kilograms.");
+		} else {
 			System.out.println("Please enter a weight between 1 - 1000lbs.");
+		}
 
 		System.out.println("\nNext enter your height in inches: ");
 		userEntry2 = input.nextDouble();
 
-		if (userEntry2 > 0 || userEntry1 < 90) {
+		if ((userEntry2 >= 0) || (userEntry1 < 90)) {
 			inMeters = userEntry2 * 0.0254;
 			System.out.println("You are " + inMeters + " in meters.");
-		} else
+		} else {
 			System.out.println("Please enter a weight between 1 - 90in.");
+		}
 
 		BmiRanges();
 
-		System.out.println("Here is your BMI:\n");
-		System.out.println("Since you are" + inKilograms + " in kilograms, and are " + inMeters + " in meters");
+		System.out.println("Here is your BMI:");
+		System.out.println("Since you are " + inKilograms + " in kilograms, and " + inMeters + " in meters.");
 
 		bmiFound = inKilograms / (inMeters * inMeters);
 		System.out.println("Your BMI is: " + bmiFound);
+
+		/*
+		 * here I included and if/else if statement for the differennt BMI levels I used
+		 * this tutorial to help me with the if/else if statements
+		 * https://www.w3schools.com/java/java_conditions.asp
+		 */
+		if (bmiFound < 18.5) {
+			System.out.println("Your BMI is underweight, you might want to go to the doctor!\n");
+		} else if ((bmiFound >= 18.5) || (bmiFound <= 24.9)) {
+			System.out.println("Your BMI is normal, keep it up!\n");
+		} else if ((bmiFound >= 25) || (bmiFound <= 29.9)) {
+			System.out.println("Your BMI is overweight, there is nothing wrong with a little chunk!!\n");
+		} else {
+			System.out.println("Your BMI is obese, you have too much chunk! Go to the doctor.\n");
+		}
 	}
 
 	/**
@@ -84,7 +101,5 @@ public class BmiProgram {
 		System.out.println("|      Overweight: 25 – 29.9      |");
 		System.out.println("|      Obese: 30 or greater       |");
 		System.out.println("+---------------------------------+");
-		System.out.println("\n");
 	}
-
 }
