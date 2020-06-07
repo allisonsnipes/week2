@@ -32,7 +32,7 @@ public class BmiProgram {
 		 * input and calculate the bmi. (make sure to include error handling) 4.I need
 		 * to have a if/else if for each bmi range.
 		 */
-		if ((userEntry1 >= 0) || (userEntry1 < 1000)) {
+		if ((userEntry1 > 0) && (userEntry1 <= 1000)) {
 			inKilograms = userEntry1 * 0.45359237;
 			System.out.println("You are " + inKilograms + " in kilograms.");
 		} else {
@@ -42,7 +42,7 @@ public class BmiProgram {
 		System.out.println("\nNext enter your height in inches: ");
 		userEntry2 = input.nextDouble();
 
-		if ((userEntry2 >= 0) || (userEntry1 < 90)) {
+		if ((userEntry2 >= 0) && (userEntry2 <= 100)) {
 			inMeters = userEntry2 * 0.0254;
 			System.out.println("You are " + inMeters + " in meters.");
 		} else {
@@ -54,7 +54,7 @@ public class BmiProgram {
 		System.out.println("Here is your BMI:");
 		System.out.println("Since you are " + inKilograms + " in kilograms, and " + inMeters + " in meters.");
 
-		bmiFound = inKilograms / (inMeters * inMeters);
+		bmiFound = (inKilograms) / (inMeters * inMeters);
 		System.out.println("Your BMI is: " + bmiFound);
 
 		/*
@@ -64,9 +64,9 @@ public class BmiProgram {
 		 */
 		if (bmiFound < 18.5) {
 			System.out.println("Your BMI is underweight, you might want to go to the doctor!\n");
-		} else if ((bmiFound >= 18.5) || (bmiFound <= 24.9)) {
+		} else if ((bmiFound >= 18.5) && (bmiFound <= 24.9)) {
 			System.out.println("Your BMI is normal, keep it up!\n");
-		} else if ((bmiFound >= 25) || (bmiFound <= 29.9)) {
+		} else if ((bmiFound >= 25) && (bmiFound <= 29.9)) {
 			System.out.println("Your BMI is overweight, there is nothing wrong with a little chunk!!\n");
 		} else {
 			System.out.println("Your BMI is obese, you have too much chunk! Go to the doctor.\n");
