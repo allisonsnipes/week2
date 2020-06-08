@@ -1,0 +1,23 @@
+This week our readings discussed the advantages and disadvantages of using basic arithmetic operators and shorthand arithmetic operators. I will highlight my opinions below, and will close with deciding on whether if I prefer them or not.
+
+Advantages:
+
+Efficiency (saves: code lines, time, and sets a common standard of syntax within the community).
+Concise (it keeps long overbearing and complicated code to a minimum).
+It builds upon the knowledge of the user to write eloquent code.
+When used correctly it can minimize the chance of getting runtime or compiling errors. 
+Bugs that the user may have missed will be easier to find because the code is less daunting to go through.
+Using shorthand improves the overall readability of code.
+Some of the operators are quite interesting to learn about; such as the modulus sign (which is fun to say and write down in my notes).
+
+
+Disadvantages:
+For users who are new to programming or coding it might be hard to understand and grasp the syntax, proper usage, and terminology of the operators.
+The short hand arithmetic operators might be easy to get confused with a syntax from another language while coding in Java. Therefore it might throw syntax, logical, or compiling errors (thinking of other languages short hand while coding in Java).
+Users who prefer to type out long hand code may prefer not to use it. They might find that shorthand is less eloquent, and dumbed-down.
+The shorthand arithmetic operators might be different in another language; those familiar with Java might try to use the same syntax while coding in another language (using Java's syntax instead of the proper language they are supposed to be working in). This might cause the user to experience errors both at runtime or at compiling. 
+If the programmer is in a rush, or not paying attention they run the risk of incorrectly typing the shorthand operator. 
+Usage of the % (modulus sign) seems to be pointless--I still do not really understand when this will be useful.
+
+In closing:
+Although I have listed more disadvantages	than advantages, I am still a proponent of using shorthand arithmetic operators when using Java. It might take sometime to understand the syntax and proper use case of shorthand arithmetic operators--but I believe understanding how to utilize these operator is well worth it. The benefits (that I can come up with other than what the book mentions) out weigh the disadvantages once the programmer adjusts to Java's syntax.
