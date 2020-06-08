@@ -70,8 +70,10 @@ public class BmiProgram {
 			System.out.println("Your BMI is normal, keep it up!\n");
 		} else if ((bmiFound >= 25) && (bmiFound <= 29.9)) {
 			System.out.println("Your BMI is overweight, there is nothing wrong with a little chunk!!\n");
-		} else {
+		} else if (bmiFound >= 30) {
 			System.out.println("Your BMI is obese, you have too much chunk! Go to the doctor.\n");
+		} else {
+			System.out.println("Invalid entry, please try again.\n");
 		}
 	}
 
