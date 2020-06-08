@@ -6,6 +6,8 @@
 * which will be converted to meters.
 *
 * @author Allison Snipes
+* @course EN.605.201.81
+* @assignment 2.1
 */
 
 import java.util.Scanner;

@@ -1,3 +1,12 @@
+
+/**
+* This application will prompt the user to enter (6) integers which it will display in a 3 by 2 (row - column) format. My assignment is to: modify the program so that the output looks like the image provided. However the user should still be able to enter any number that they choose.
+*
+* @author Allison Snipes
+* @course EN.605.201.81
+* @assignment 2.2
+*/
+
 import java.util.Scanner;
 
 public class Original {
@@ -24,9 +33,12 @@ public class Original {
     // Output using System.out.println()
     System.out.println("\n\n");
     System.out.println("\t" + "Value" + "\t" + "Value" + "\t" + "Total");
-    System.out.println("\t" + v1 + "\t" + v2);
-    System.out.println("\t" + v3 + "\t" + v4);
-    System.out.println("\t" + v5 + "\t" + v6);
+    System.out.println("\t" + v1 + "\t" + v2 + "\t" + (v1 + v2));
+    System.out.println("\t" + v3 + "\t" + v4 + "\t" + (v3 + v4));
+    System.out.println("\t" + v5 + "\t" + v6 + "\t" + (v5 + v6));
+    System.out.println("\t" + "----" + "\t" + "----" + "\t" + "----");
+    System.out
+        .println("Total" + "\t" + (v1 + v3 + v5) + "\t" + (v2 + v4 + v6) + "\t" + ((v1 + v2) + (v3 + v4) + (v5 + v6)));
     System.out.println("\n\n");
   }
 }
